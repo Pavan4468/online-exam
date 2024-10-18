@@ -1,0 +1,83 @@
+/* Main container for results */
+.results-container {
+    background-color: #C4D7FF; /* New background color for container */
+    color: #0E1C26; /* Dark text color for better contrast */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Title of the results section */
+.results-title {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0E1C26; /* Dark color for title */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+/* List of result cards */
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Increased gap between cards */
+}
+
+/* Individual result card */
+.result-card {
+    background-color: #F3F8FF; /* Lighter background for card */
+    border-left: 6px solid #3B82F6; /* New accent border with a brighter blue */
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+.result-card:hover {
+    transform: scale(1.06); /* Slightly increased hover scale */
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+/* Subject name styling */
+.subject-name {
+    font-size: 1.9em;
+    color: #3B82F6; /* Brighter blue for subject name */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Score and date/time styling */
+.score-text,
+.date-time-text {
+    font-size: 1.3em;
+    color: #0E1C26; /* Dark text color */
+    margin: 8px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .results-container {
+        padding: 25px;
+    }
+
+    .results-title {
+        font-size: 2.2em;
+    }
+
+    .result-card {
+        padding: 20px;
+    }
+
+    .subject-name {
+        font-size: 1.6em;
+    }
+
+    .score-text,
+    .date-time-text {
+        font-size: 1.1em;
+    }
+}

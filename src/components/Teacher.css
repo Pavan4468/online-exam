@@ -1,0 +1,105 @@
+/* src/Teacher.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    margin: 0;
+    padding: 0;
+}
+
+.teacher-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #87A2FF; /* Light blue container */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    border-radius: 15px;
+    text-align: center;
+}
+
+.teacher-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #F5F5F7; /* Very light gray text */
+    margin-bottom: 20px;
+}
+
+.teacher-description {
+    font-size: 18px;
+    color: #F5F5F7; /* Very light gray text */
+    margin-bottom: 30px;
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0056b3; /* Very light gray text */
+    align-self: flex-start;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.form-input {
+    width: 94%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #0056b3; /* Light border */
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for inputs */
+    color: #333; /* Darker text for contrast */
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #0056b3; /* Dark blue border on focus */
+    outline: none;
+}
+
+/* Adjusted styles for the question block */
+.question-block {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 5px; /* Reduced padding */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between question blocks */
+    width: calc(100%); /* Adjust width to fit the container */
+}
+
+/* Display the parsed output distinctly */
+.parsed-output {
+    margin-top: 10px; /* Space above parsed output */
+    font-size: 14px; /* Smaller font for parsed output */
+    color: #0056b3; /* Darker blue color */
+    border: 1px solid #0056b3; /* Border for parsed output */
+    padding: 8px; /* Padding around parsed output */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(235, 235, 235, 0.8); /* Light background */
+}
+
+.add-question-button, .parse-button, .submit-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0056b3; /* Button background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-question-button:hover, .parse-button:hover, .submit-button:hover {
+    background-color: #003d80; /* Darker blue on hover */
+}
+.question-image {
+    width: 50%; /* Set width to 50% */
+    height: 50%; /* Set height to 50% */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-top: 10px; /* Add some space above the image */
+    border-radius: 5px; /* Optional: rounded corners for a better look */
+}

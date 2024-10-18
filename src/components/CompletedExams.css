@@ -1,0 +1,42 @@
+/* src/components/CompletedExams.css */
+
+body {
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    font-family: 'Arial', sans-serif; /* Set a clean font */
+}
+
+.exams-container {
+    background-color: white; /* White background for the container */
+    border: 2px solid #003366; /* Royal blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    max-width: 800px; /* Max width for the container */
+    margin: 40px auto; /* Center the container with auto margins */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    color: #003366; /* Royal blue color for the heading */
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Larger font size for heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.exams-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.exams-list li {
+    background-color: #00509e; /* Lighter royal blue for list items */
+    color: white; /* White text color */
+    padding: 15px; /* Padding for list items */
+    margin: 10px 0; /* Space between list items */
+    border-radius: 4px; /* Rounded corners for list items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.exams-list li:hover {
+    background-color: #003366; /* Darker royal blue on hover */
+    cursor: pointer; /* Change cursor on hover */
+}

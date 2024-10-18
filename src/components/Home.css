@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    width: 100%;
+    background-color: #003366; /* Royal Blue */
+    color: white;
+    padding: 0 20px; /* Adjusted padding for better layout */
+    height: 80px; /* Adjust the height for the header */
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spreads the items across the row */
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.header h2 {
+    margin: 0;
+    margin-right: auto; /* Pushes the h2 to the left */
+    font-size: 24px;
+}
+
+
+.header nav {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px; /* Horizontal margin between items */
+    border-radius: 4px;
+    font-weight: bold; /* Bold menu text */
+    transition: background-color 0.3s;
+}
+
+.header nav a:hover {
+    background-color: #00509e; /* Lighter Royal Blue */
+}
+
+.content {
+    margin-top: 100px; /* Adds space below the header to avoid overlap */
+    padding: 20px;
+    text-align: center; /* Centers the entire quiz section */
+}
+
+.quiz-container {
+    background-color: white;
+    border: 2px solid #003366; /* Royal Blue */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px; /* Added max-width for better control */
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.quiz-container:hover {
+    transform: scale(1.02);
+}
+
+.quiz-title {
+    color: #003366; /* Royal Blue */
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quiz-timer {
+    color: #00509e; /* Lighter Royal Blue */
+    font-size: 18px;
+    text-align: center;
+}
+
+.questions-container {
+    background-color: white;
+    border: 2px solid #003366; /* Royal Blue */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a maximum width for larger screens */
+}
+
+.question-block {
+    margin-bottom: 20px;
+    text-align: center; /* Center align the question text */
+    color: #000;
+    font-weight: bold;
+}
+
+.option-button {
+    background-color: #00509e; /* Lighter Royal Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: calc(25% - 10px); /* Set width to 25% of parent container */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.option-button:hover {
+    background-color: #003366; /* Royal Blue */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.selected {
+    background-color: #FF6500; /* Orange */
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center; /* Center align navigation buttons */
+}
+
+.navigation-buttons button {
+    background-color: #00509e; /* Lighter Royal Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background-color: #003366; /* Royal Blue */
+}
+
+.submit-button {
+    background-color: #ff0000; /* Red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width for submit button */
+}
+
+.submit-button:hover {
+    background-color: #cc0000; /* Darker Red */
+}
+
+.results-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.question-image {
+    max-width: 50%; /* Responsive image */
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.no-quizzes-message {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #333;
+}
+
+.quiz-ended {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.quiz-ended h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.quiz-ended p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.college-logo {
+    width: 50px; /* Adjust width to desired size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the logo is treated as a block element */
+    margin: 0 15px 0 0; /* Adds margin-right for spacing */
+}
